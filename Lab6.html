@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/564x/7c/44/23/7c4423cbc14dd14fed7a41dbfd4310f5.jpg'); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            text-align: center; 
+
+        }
+
+        form {
+            max-width: 600px;
+            margin: 120px auto 40px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 16px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        select, datalist {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        output, progress {
+            display: block;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        header {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   background: rgba(250, 156, 255, 0.9); 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 8%;
+   z-index: 1;
+}
+
+      header .logo {
+         color: rgba(46, 4, 85, 0.824); 
+         font-size: 46px;
+      }
+    </style>
+</head>
+<body>
+
+
+</body>
+</html>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Lab5</a>      
+     </header>
+
+<form action="/submit" method="post" accept-charset="UTF-8" target="_blank" enctype="multipart/form-data" id="myForm">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" size="30" required autofocus>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" size="30" required>
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" size="15" required>
+
+    <label for="file">Фото електронного рецепта</label>
+    <input type="file" id="file" name="file" multiple accept=".jpg, .jpeg, .png">
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="Add:">Додаткові зауваження:</label>
+    <textarea id="message" name="message" cols="40" rows="5" maxlength="500" autofocus></textarea>
+
+    <button type="submit" form="myForm" formmethod="post" formtarget="_blank" formnovalidate>Відправити</button>
+</form>
+
+<fieldset id="myFieldset" class="fieldsetClass" lang="en">
+    <legend id="legendTitle" title="Fieldset Legend" style="color: blue;"></legend>
+
+    <label for="choice">Вибір:</label>
+    <select id="choice" name="choice">
+        <optgroup label="Група 1" lang="uk" dir="ltr">
+            <option value="option1" selected>Опція 1</option>
+            <option value="option2">Опція 2</option>
+        </optgroup>
+        <optgroup label="Група 2" lang="uk" dir="ltr" disabled>
+            <option value="option3">Опція 3</option>
+            <option value="option4">Опція 4</option>
+        </optgroup>
+    </select>
+</fieldset>
+
+<progress id="progressBar" value="50" max="100" class="progressClass"></progress>
+
+</body>
+</html>
