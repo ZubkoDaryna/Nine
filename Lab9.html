@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя медіа-бібліотека</title>
+    <script src="lab9.js"></script>  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Моя медіа-бібліотека</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#audio-section">Аудіо</a></li>
+            <li><a href="#video-section">Відео</a></li>
+        </ul>
+    </nav>
+
+    <section id="audio-section">
+        <h2>Аудіо</h2>
+        <label for="audioSelector">Вибрати аудіо:</label>
+        <select id="audioSelector" onchange="changeAudio()">
+            <option value="D:\Завантаження\BTS – Boy in Luv.mp3">BTS - Boy in Luv</option>
+            <option value="D:\Завантаження\Stray_Kids_-_DOMINO_(musmore.com).mp3">Stray Kids ＜NOEASY＞ UNVEIL : TRACK 5 "DOMINO"</option>
+             <option value="D:\Завантаження\enhypen-bite-me-mp3.mp3">  ENHYPEN (엔하이픈) 'Bite Me'</option>
+
+            </option>
+        </select>
+        <audio id="myAudio" controls loop>
+            <source id="audioSource" src="D:\Завантаження\BTS – Boy in Luv.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <section id="video-section">
+        <h2>Відео</h2>
+        <label for="videoSelector">Вибрати відео:</label>
+        <select id="videoSelector" onchange="changeVideo()">
+            <option value="D:\Завантаження\akashi seijuro __ mic drop.mp4">Akashi Seijuro - Mic Drop</option>
+            <option value="D:\Завантаження\[AMV] Haikyuu!!- Can't hold us.mp4">Haikyuu!! - Can't Hold Us</option>
+            <option value="D:\Завантаження\Dancin「ＡＭＶ」.mp4">Dancin「ＡＭＶ」</option>
+        </select>
+        <video id="myVideo" controls>
+            <source id="videoSource" src="D:\Завантаження\akashi seijuro __ mic drop.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            Ваш браузер не підтримує відео елемент.
+        </video>
+    </section>
+        
+    </section>
+</body>
+</html>
